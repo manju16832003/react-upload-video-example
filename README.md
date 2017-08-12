@@ -4,6 +4,8 @@ git clone git clone https://manju16832003@bitbucket.org/wootagtest/woo-tag-video
 
 `cd woo-tag-video-upload-ui`
 
+`npm install`
+
 `yarn start` OR `npm start`
 
 Go to http://localhost:3000
