@@ -19,7 +19,7 @@ export default class VideoUpload extends Component {
     const files = this.filesInput.files
     console.log('FILES', files)
     var req = request.post(apiUrl + 'video/upload')
-    req.attach(files[ 0 ].name, files[ 0 ])
+    req.attach(files[0].name, files[0])
 
     req.end((err, res) => {
       console.log('Upload completed!')
@@ -27,7 +27,7 @@ export default class VideoUpload extends Component {
         console.log('Error uploading video: ', err)
       }
 
-      if (res.text === 'success' && res.statusCode === 200) {
+      if (res.statusText === 'OK' && res.statusCode === 200) {
         this.setState({ message: 'Video Uploaded Successfully!!!' })
       }
     })
