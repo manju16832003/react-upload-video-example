@@ -10,6 +10,8 @@ git clone git clone https://manju16832003@bitbucket.org/wootagtest/woo-tag-video
 
 Go to http://localhost:3000
 
+Uploaded videos are located at `woo-tag-video-upload-service/videos`
+
 # Commands
 
 `yarn start`
